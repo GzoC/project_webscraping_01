@@ -1,0 +1,1 @@
+archivos CSV u otros datos, p.ej. "scraped_data.csv"
