@@ -1,0 +1,126 @@
+
+---
+
+## Creación y Contenido del Archivo .gitignore
+
+### **Creación en la Interfaz Web de GitHub**
+
+Al crear un nuevo repositorio en GitHub (desde la interfaz web), se te ofrecerá la opción de _"Add .gitignore"_.  
+1. En el formulario de creación del repositorio, busca el apartado **"Add .gitignore"**.  
+2. Haz clic en el desplegable y selecciona la opción **"Python"**.  
+   - Esta plantilla incluye las exclusiones más comunes para proyectos en Python (archivos compilados, entornos virtuales, directorios de cache, etc.).
+
+### **Contenido Completo del Archivo .gitignore**
+
+Copia el siguiente contenido en tu archivo `.gitignore`:
+
+```gitignore
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribución / Packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Registros del instalador
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Reportes de tests y cobertura
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Archivos de traducción
+*.mo
+*.pot
+
+# Configuraciones específicas de Django
+*.log
+local_settings.py
+
+# Configuraciones específicas de Flask
+instance/
+.webassets-cache
+
+# Configuraciones específicas de Scrapy
+.scrapy
+
+# Documentación de Sphinx
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Archivos de pyenv
+.python-version
+
+# Archivos de Celery
+celerybeat-schedule
+
+# Variables de entorno
+.env
+.env.*
+
+# Entornos virtuales
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Configuraciones de Spyder
+.spyderproject
+.spyproject
+
+# Configuraciones de Rope
+.ropeproject
+
+# Configuraciones de MkDocs
+/site
+
+# Caché de mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Configuraciones de Pyre
+.pyre/
