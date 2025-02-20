@@ -1,10 +1,5 @@
-Aquí tienes el contenido del archivo `README.md` completamente documentado, listo para copiar y pegar en tu proyecto.
-
----
-
 ### 📄 **README.md - Web Scraping y Análisis de Datos**
 
-```markdown
 # 📊 Web Scraping y Análisis de Datos - Books to Scrape
 
 Este proyecto tiene como objetivo demostrar la capacidad de realizar **Web Scraping**, limpieza y análisis de datos utilizando **Python**. Se utiliza el sitio web [Books to Scrape](http://books.toscrape.com/) como fuente de datos, ya que está diseñado específicamente para prácticas de Web Scraping.
