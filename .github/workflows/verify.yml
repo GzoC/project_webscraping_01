@@ -1,0 +1,21 @@
+name: Verificar ejercicio
+on:
+  push:
+    branches: [main, 'codex/**']
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  notebook:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2 # v10.3.3
+        with:
+          version: '0.11.19'
+          python-version: '3.12'
+      - run: uv venv
+      - run: uv pip install -r requirements.txt
+      - run: .venv/bin/python -m unittest discover -s tests -v
+      - name: Ejecutar el notebook con la muestra local
+        run: .venv/bin/python -m nbconvert --to notebook --execute --ExecutePreprocessor.timeout=120 --output-dir="$RUNNER_TEMP" notebooks/project_webscraping_01.ipynb
